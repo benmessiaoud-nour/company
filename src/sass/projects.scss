@@ -1,0 +1,110 @@
+@import './variables';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow-x: hidden !important;
+}
+
+
+
+
+.banner {
+    #banner-img {
+        background-image: url(../images/projects-banner.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 10%;
+        background-size: cover;
+        height: 250px;
+
+    }
+
+
+    .overlay {
+        position: absolute;
+        background-color: rgba(65, 155, 155, 0.5);
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title1 {
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.our-works {
+    .custom-btn-2 {
+        color: #363636;
+        background-color: white;
+        border: none;
+        border-radius: 1px;
+        font-weight: bold;
+        position: absolute;
+        right: 25px;
+        top: 20px;
+
+        &:hover,
+        &:focus {
+            color: white;
+            background-color: $main-color;
+            border: none;
+        }
+    }
+}
+
+.project-detaills {
+
+    .btn,
+    button {
+
+        &:active,
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+
+    #image-gallery {
+        .modal-footer {
+            display: block;
+        }
+    }
+
+    .thumb {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.project-detaills {
+    .card {
+        .card-body {
+            .card-title {
+                font-weight: 800;
+                color: $main-color;
+            }
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .project-detaills {
+        .thumb {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+}
