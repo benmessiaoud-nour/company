@@ -128,6 +128,18 @@ module.exports = {
             template: "./src/projectDetaills.html",
             filename: "projectDetaills.html",
         }),
+        new HtmlWebpackPlugin({
+            template: "./src/blog.html",
+            filename: "blog.html",
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/blog-detaills.html",
+            filename: "blog-detaills.html",
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/add-blog.html",
+            filename: "add-blog.html",
+        }),
         new MiniCssExtractPlugin()
     ],
 };
